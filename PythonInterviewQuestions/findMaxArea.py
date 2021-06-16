@@ -28,7 +28,7 @@ def findMaxCrossArea(A, low, mid, high):
 
 def findMaxArea(A, low, high):
     if high == low:
-        return low, high, A[low]
+        return low, high, 0
     else:
         mid = (low + high) // 2
         left_low, left_high, left_sum = findMaxArea(A, low, mid)
