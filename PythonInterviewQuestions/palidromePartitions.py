@@ -1,5 +1,5 @@
 def isPalindrome(S):
-    for i in range(int(len(S) / 2)):
+    for i in range(len(S) // 2):
         if S[i] != S[-1 - i]:
             return False
 
